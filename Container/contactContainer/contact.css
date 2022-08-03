@@ -1,0 +1,38 @@
+.contact-body .image img {
+    width: 100%;
+}
+
+.contact-main {
+    padding: 2rem;
+    text-align: center;
+    border: var(--border-style);
+}
+
+.contact-main h3 {
+    font-size: 2rem;
+    color: var(--black-color);
+    margin-bottom: 1.5rem;
+    text-transform: capitalize;
+}
+
+.contact-input {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-input__item {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    border: var(--border-style);
+
+    font-size: 1.5rem;
+    color: var(--black-color);
+
+    margin-bottom: 1rem;
+}
+
+textarea.contact-input__item {
+    height:15rem;
+    resize: none;
+}

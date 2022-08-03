@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!-- slide -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="../../cssBase/base.css">
+    <link rel="stylesheet" href="../../cssBase/headerAndFooter.css">
+    <link rel="stylesheet" href="./homeCss.css">
+    <link rel="stylesheet" href="../../cssBase/responsive.css">
+</head>
+<body>
+
+    <!-- HEADER START -->
+    <header>
+
+        <section class="flex">
+
+            <a href="../homeContainer/home.html" class="logo">yum-yum &#128525;</a>
+
+            <nav class="navbar">
+                <a href="../homeContainer/home.html">home</a>
+                <a href="../aboutContainer/about.html">about</a>
+                <a href="../menuContainer/menu.html">menu</a>
+                <a href="../ordersContainer/orders.html">orders</a>
+                <a href="../contactContainer/contact.html">contact</a>
+            </nav>
+
+            <div class="header-icon">
+                <i class="header-icon--item icon-search fa-solid fa-magnifying-glass"></i>
+                <a href="../cartContainer/cart.html" class="header-icon--item cart-icon fa-solid fa-cart-shopping"><span>(3)</span></a>
+                <div class="header-icon--item icon-users fa-solid fa-user"></div>
+                <div class="header-icon--item icon-menu fa-solid fa-bars"></div>
+            </div>
+
+            <!-- Profile -->
+            <div class="header-profile">
+                <span class="name-user">
+                    Nguyễn Ngọc Khánh
+                </span>
+                <div class="flex not-wrap">
+                    <a href="../profileContianer/profile.html" class="btn">profile</a>
+                    <a href="#" class="btn delete-btn">logout</a>
+                </div>
+                <span class="accout">
+                    <a href="../loginContainer/login.html">login</a> 
+                    or
+                    <a href="../registerContainer/register.html">register</a>
+                </span>
+            </div>
+
+            <!-- search -->
+            <div class="search">
+                <div class="search-input flex not-wrap">
+                    <input type="text" placeholder="enter here...">
+                    <i class="header-icon--item icon-search fa-solid fa-magnifying-glass"></i>
+                </div>
+                <i class="search-icon--close fa-solid fa-xmark"></i>
+            </div>
+
+        </section>
+
+    </header>
+    <!-- HEADER END -->
+
+    <!-- HERO START -->
+    <section class="hero">
+
+        <div class="swiper hero-slide">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>order online</sp>
+                        <h3>delicious piza</h3>
+                        <a href="../menuContainer/menu.html" class="btn">see menu</a>
+                    </div>
+                    <div class="image">
+                        <img src="../../images/home-img-1.png" alt="">
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>order online</sp>
+                        <h3>double hamburger</h3>
+                        <a href="../menuContainer/menu.html" class="btn">see menu</a>
+                    </div>
+                    <div class="image">
+                        <img src="../../images/home-img-2.png" alt="">
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>order online</sp>
+                        <h3>roasted chicken</h3>
+                        <a href="../menuContainer/menu.html" class="btn">see menu</a>
+                    </div>
+                    <div class="image">
+                        <img src="../../images/home-img-3.png" alt="">
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- HERO END -->
+
+    <!-- CATEGORY START -->
+    <section class="category">
+        <h2 class="title">food category</h2>
+        
+        <div class="box-container-27">
+            <a href="#"  class="box">
+                <img src="../../images/cat-1.png" alt="">
+                <h3>fast food</h3>
+            </a>
+
+            <a href="#" class="box">
+                <img src="../../images/cat-2.png" alt="">
+                <h3>main dishes</h3>
+            </a>
+
+            <a href="#" class="box">
+                <img src="../../images/cat-3.png" alt="">
+                <h3>drinks</h3>
+            </a>
+
+            <a href="#" class="box">
+                <img src="../../images/cat-4.png" alt="">
+                <h3>desserts</h3>
+            </a>
+        </div>
+    </section>
+    <!-- CATEGORY END -->
+
+    <!-- DISHES START -->
+    <section class="dishes">
+        <h2 class="title">latest dishes</h2>
+
+        <div class="box-container-33">
+            <div class="box">
+                <div class="image">
+                    <img src="../../uploaded_img/pizza-4.png" alt="">
+                    <a href="#" class="fa-solid fa-eye"></a>
+                    <a href="" class="fa-solid fa-cart-shopping"></a>
+                </div>
+
+                <div class="content">
+                    <a href="#">fast food</a>
+                    <h3 class="namefood">delicious pizza 01</h3>
+                    <div class="flex">
+                        <div class="price">
+                            <span>$</span>
+                            3
+                            <span>/-</span>
+                        </div>
+                        <input type="number" 
+                                value="1" 
+                                min="1" 
+                                max="99" 
+                                onkeypress="if(this.value.leght == 2) return false;"
+                        >
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="../../uploaded_img/dish-2.png" alt="">
+                    <a href="#" class="fa-solid fa-eye"></a>
+                    <a href="" class="fa-solid fa-cart-shopping"></a>
+                </div>
+
+                <div class="content">
+                    <a href="#">dishes</a>
+                    <h3 class="namefood">main dish 01</h3>
+                    <div class="flex">
+                        <div class="price">
+                            <span>$</span>
+                            3
+                            <span>/-</span>
+                        </div>
+                        <input type="number" 
+                                value="1" 
+                                min="1" 
+                                max="99" 
+                                onkeypress="if(this.value.leght == 2) return false;"
+                        >
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="../../uploaded_img/dish-1.png" alt="">
+                    <a href="#" class="fa-solid fa-eye"></a>
+                    <a href="" class="fa-solid fa-cart-shopping"></a>
+                </div>
+
+                <div class="content">
+                    <a href="#">fast food</a>
+                    <h3 class="namefood">chezzy hamburger 01</h3>
+                    <div class="flex">
+                        <div class="price">
+                            <span>$</span>
+                            3
+                            <span>/-</span>
+                        </div>
+                        <input type="number" 
+                                value="1" 
+                                min="1" 
+                                max="99" 
+                                onkeypress="if(this.value.leght == 2) return false;"
+                        >
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="../../uploaded_img/dessert-3.png" alt="">
+                    <a href="#" class="fa-solid fa-eye"></a>
+                    <a href="" class="fa-solid fa-cart-shopping"></a>
+                </div>
+
+                <div class="content">
+                    <a href="#">dessert</a>
+                    <h3 class="namefood">delicious pizza 01</h3>
+                    <div class="flex">
+                        <div class="price">
+                            <span>$</span>
+                            3
+                            <span>/-</span>
+                        </div>
+                        <input type="number" 
+                                value="1" 
+                                min="1" 
+                                max="99" 
+                                onkeypress="if(this.value.leght == 2) return false;"
+                        >
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="../../uploaded_img/drink-3.png" alt="">
+                    <a href="#" class="fa-solid fa-eye"></a>
+                    <a href="" class="fa-solid fa-cart-shopping"></a>
+                </div>
+
+                <div class="content">
+                    <a href="#">drinks</a>
+                    <h3 class="namefood">fresh drink 01</h3>
+                    <div class="flex">
+                        <div class="price">
+                            <span>$</span>
+                            3
+                            <span>/-</span>
+                        </div>
+                        <input type="number" 
+                                value="1" 
+                                min="1" 
+                                max="99" 
+                                onkeypress="if(this.value.leght == 2) return false;"
+                        >
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="../../uploaded_img/dish-3.png" alt="">
+                    <a href="#" class="fa-solid fa-eye"></a>
+                    <a href="" class="fa-solid fa-cart-shopping"></a>
+                </div>
+
+                <div class="content">
+                    <a href="#">dishes</a>
+                    <h3 class="namefood">main dish 02</h3>
+                    <div class="flex">
+                        <div class="price">
+                            <span>$</span>
+                            3
+                            <span>/-</span>
+                        </div>
+                        <input type="number" 
+                                value="1" 
+                                min="1" 
+                                max="99" 
+                                onkeypress="if(this.value.leght == 2) return false;"
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dishes-more">
+            <a href="../menuContainer/menu.html" class="btn">view all</a>
+        </div>
+    </section>
+    <!-- DISHES END -->
+
+    <!-- FOOTER START -->
+    <footer>
+
+        <section class="grid">
+            <div class="box">
+                <img src="../../images/email-icon.png" alt="">
+                <h3>our email</h3>
+                <a href="kh2000987@gmail.com">kh2000987@gmail.com</a>
+                <a href="nguyenkhanh28122000@gmail.com">nguyenkhanh28122000@gmail.com</a>
+            </div>
+
+            <div class="box">
+                <img src="../../images/clock-icon.png" alt="">
+                <h3>opening hours</h3>
+                <p>00:07am to 00:10pm</p>
+            </div>
+
+            <div class="box">
+                <img src="../../images/map-icon.png" alt="">
+                <h3>our address</h3>
+                <a href="6WWJ+RX Sóc Sơn, Hà Nội, Việt Nam">Sóc Sơn - Hà Nội</a>
+            </div>
+
+            <div class="box">
+                <img src="../../images/phone-icon.png" alt="">
+                <h3>our number</h3>
+                <a href="tel:+84338204170">+84 338204180</a>
+                <a href="tel:+84989337699">+84 989337699</a>
+            </div>
+        </section>
+
+        <div class="credit">
+            © copyright @ 2022 by
+            <span> mr. web designer </span>
+            | all rights reserved!
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <!-- LOADER START-->
+    <div class="loader">
+        <img src="../../images/loader.gif" alt="">
+    </div>
+    <!-- LOADER END-->
+
+
+    <!-- SCRIPT SLIDE -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/cdf16a5ec0.js" crossorigin="anonymous"></script>
+
+    <!-- SCRIPT -->
+    <script src="../../js/main.js"></script>
+</body>
+</html>

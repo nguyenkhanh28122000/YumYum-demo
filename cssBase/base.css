@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,600;0,700;1,300&family=Roboto+Slab:wght@300;500;700&family=Rubik:wght@300;400;500;600&display=swap');
+
+:root {
+    --yellow-color: #fed330;
+    --red-color: #e74c3c;
+    --white-color: #fff;
+    --black-color: #222222;
+    --light-color: #777777;
+    --border-style: .2rem solid var(--black-color);
+}
+
+* {
+    font-family: 'Rubik', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+}
+
+*::selection {
+    background-color: var(--yellow-color);
+    color: var(--white-color)
+}
+
+::-webkit-scrollbar {
+    height: .5rem;
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--yellow-color);
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    stop-opacity: 7rem;
+}
+
+section {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding:2rem;
+}
+
+/* button */
+.btn {
+    display: inline-block;
+    background-color:var(--yellow-color);
+    color: var(--black-color);
+    padding: 1.3rem 3rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.btn.delete-btn {
+    background-color: var(--red-color);
+    color: var(--white-color);
+}
+
+.btn:hover {
+    letter-spacing: .2rem;
+}
+
+.mar-bt-10 {
+    margin-bottom: 1rem;
+}
+
+/* title box */
+
+.title {
+    font-size: 4rem;
+    color: var(--black-color);
+    font-weight: 500;
+    margin-bottom: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+
+/* BOX CONTAINER */
+.box-container-27 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.box-container-30 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.box-container-33 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 33rem);
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.flex {
+    display: flex;
+    align-items:center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.flex.space-between {
+    justify-content:space-between
+}
+
+.flex.not-wrap {
+    flex-wrap: nowrap;
+}
+
+.box-2 {
+    flex: 1 1 40rem;
+}
+
+/* PAGE */
+.title-page {
+    width: 100%;
+    background-color: var(--black-color);
+    text-align: center;
+
+    padding: 6rem;
+}
+
+.title-page--name {
+    font-size: 4rem;
+    font-size: 300;
+    color: var(--white-color);
+    text-transform: capitalize;
+    margin-bottom:1rem;
+}
+
+.title-page p {
+    font-size: 2rem;
+    color: var(--light-color);
+}
+
+.title-page p a {
+    color: var(--yellow-color);
+}
+
+.title-page p a:hover {
+    color: var(--white-color);
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--yellow-color);
+}
+
+/* LOGIN AND RES CSS */
+.input__body {
+    max-width: 50rem;
+    padding: 2rem;
+    margin: 0 auto;
+    border: var(--border-style);
+    background-color: var(--white-color);
+    text-align: center
+}
+
+.input__body h2 {
+    font-size: 2.5rem;
+    color: var(--black-color);
+    text-transform: uppercase;
+}
+
+.input__body input {
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    color: var(--black-color);
+    border: var(--border-style);
+    background-color: var(--white-color);
+
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.input__body input::placeholder {
+    font-size:1.8rem;
+    color: var(--light-color);
+}
+
+.input__body button {
+    margin-top: 2rem;
+}
+
+.input__body p {
+    font-size: 2rem;
+    font-weight:400;
+    color: var(--light-color);
+
+    margin-top: 2rem;
+}
+
+.input__body p a {
+    color: var(--red-color)
+}
+
+.input__body p a:hover {
+    color: var(--black-color)
+}
+
+
+/* loader */
+.loader {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color:var(--white-color);
+    z-index: 10000;
+
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.loader img {
+    width:35rem;
+}
+
+.loader.loader-out {
+    top: 110%;
+    opacity: 0;
+}
+
+@keyframes FadeIn {
+    0% {
+        transform: translateY(1rem)
+    }
+}

@@ -1,0 +1,20 @@
+.orders-body__item {
+    background-color: var(--white-color);
+    padding: 2rem;
+    border: var(--border-style);
+}
+
+.orders-body__item p {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 1.5rem;
+    line-height: 3rem;
+}
+
+.orders-body__item span.name {
+    color: var(--light-color);
+}
+
+.orders-body__item span.detail {
+    color: var(--black-color);
+}

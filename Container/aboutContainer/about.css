@@ -1,0 +1,86 @@
+.banner .image img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.banner .content {
+    padding: 0 3rem;
+    text-align: center;
+}
+
+.banner .content h3 {
+    font-size: 3rem
+}
+
+.banner .content p {
+    font-size: 1.5rem;
+    color:var(--light-color);
+    line-height: 2rem;
+    text-align: justify;
+    margin: 1.5rem 0;
+}
+
+.box-step {
+    border: var(--border-style);
+    background-color: var(--white-color);
+    padding: 2rem;
+    text-align: center;
+}
+
+.box-step img {
+    width: 100%;
+    height: 12rem;
+    object-fit: contain;
+    margin-bottom: 1.5rem;
+}
+
+.box-step h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--black-color);
+}
+
+.box-step p {
+    font-size: 1.5rem;
+    color: var(--light-color);
+    line-height: 2.5rem;
+}
+
+/* Reviews */
+
+.reviews .slide {
+    border: var(--border-style);
+    background-color: var(--white-color);
+    padding: 2rem;
+    text-align: center;
+}
+
+.reviews .avatar {
+    width: 100%;
+}
+
+.reviews .avatar img {
+    width: 10rem;
+    object-fit:contain;
+    border-radius: 50%;
+
+    margin-bottom: 1.5rem;
+}
+
+.reviews .content p {
+    color: var(--light-color);
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+
+.reviews .content .box-star {
+    margin: 1rem 0;
+    color: var(--yellow-color);
+    font-size: 1.5rem;
+}
+
+.reviews .content h3 {
+    color: var(--black-color);
+    font-size: 2rem;
+    text-transform: capitalize;
+}

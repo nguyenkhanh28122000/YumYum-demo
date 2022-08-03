@@ -1,0 +1,96 @@
+/* DISGES */
+.dishes .box {
+    background-color: var(--white-color);
+    border: var(--border-style);
+    padding: 2rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.dishes .box .image {
+    width: 100%;
+}
+
+.dishes .box .image img {
+    width: 100%;
+    height: 30rem;
+    object-fit: contain;
+    margin: 0;
+}
+
+.dishes .box .image a {
+    position: absolute;
+    font-size: 2rem;
+    border: var(--border-style);
+    background-color: var(--white-color);
+    color: var(--black-color);
+    width: 4.5rem; height: 4.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+}
+
+.dishes .box .image a:hover {
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+
+.dishes .box .image a:nth-child(2) {
+    top: 1.5rem; left: -5rem;
+}
+
+.dishes .box .image a:nth-child(3) {
+    top: 1.5rem; right: -5rem;
+}
+
+.dishes .box:hover .image a:nth-child(2){
+    left: 1.5rem;
+}
+
+.dishes .box:hover .image a:nth-child(3){
+    right: 1.5rem;
+}
+
+.dishes .content a{
+    font-size: 1.7rem;
+    color: var(--light-color);
+    line-height: 3rem;
+}
+
+.dishes .content a:hover {
+    color: var(--yellow-color);
+}
+
+.dishes .content h3{
+    font-size: 2.1rem;
+    font-weight: 400;
+}
+
+.dishes .content .flex {
+    justify-content:space-between;
+    margin-top:2rem;
+}
+
+.dishes .content .price {
+    font-size: 2.5rem;
+    color: var(--black-color);
+    letter-spacing: -.2rem;
+}
+
+.dishes .content .price span {
+    color: var(--light-color);
+    font-size: 2rem;
+}
+
+.dishes .content .flex input{
+    font-size: 2rem;
+    color: var(--black-color);
+    border: var(--border-style);
+    padding: 1rem;
+    width:8rem;
+}
+
+.dishes-more {
+    text-align: center;
+    margin-top: 3rem;
+}
+

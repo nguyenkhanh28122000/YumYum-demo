@@ -1,0 +1,163 @@
+.hero .slide {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items:center;
+    gap: 2rem;
+}
+
+.hero .slide .image {
+    flex: 1 1 40rem;
+}
+
+.hero .slide .image img {
+    width: 100%;
+}
+
+.hero .slide .content {
+    flex: 1 1 40rem;
+    text-align: center;
+}
+
+.hero .slide .content span {
+    font-size: 2.5rem;
+    color: var(--light-color);
+    display: inline-block;
+}
+
+.hero .slide .content h3 {
+    font-size: 5rem;
+    color: var(--black-color);
+    margin: 1rem 0;
+    text-transform:capitalize;
+}
+
+/* CATEGORY BOX CONTAINER */
+.category .box {
+    background-color: var(--white-color);
+    border: var(--border-style);
+    padding: 2rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+.category .box:hover {
+    background-color: var(--black-color);
+}
+
+.category .box:hover img {
+    filter: invert(1)
+}
+
+.category .box:hover h3 {
+    color:var(--white-color);
+}
+
+.box img {
+    width: 100%;
+    height: 10rem;
+    object-fit: contain;
+    margin-bottom: 2rem;
+}
+
+.box h3 {
+    color: var(--black-color);
+    font-size: 2rem;
+}
+
+/* DISGES */
+.dishes .box {
+    background-color: var(--white-color);
+    border: var(--border-style);
+    padding: 2rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.dishes .box .image {
+    width: 100%;
+}
+
+.dishes .box .image img {
+    width: 100%;
+    height: 30rem;
+    object-fit: contain;
+    margin: 0;
+}
+
+.dishes .box .image a {
+    position: absolute;
+    font-size: 2rem;
+    border: var(--border-style);
+    background-color: var(--white-color);
+    color: var(--black-color);
+    width: 4.5rem; height: 4.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+}
+
+.dishes .box .image a:hover {
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+
+.dishes .box .image a:nth-child(2) {
+    top: 1.5rem; left: -5rem;
+}
+
+.dishes .box .image a:nth-child(3) {
+    top: 1.5rem; right: -5rem;
+}
+
+.dishes .box:hover .image a:nth-child(2){
+    left: 1.5rem;
+}
+
+.dishes .box:hover .image a:nth-child(3){
+    right: 1.5rem;
+}
+
+.dishes .content a{
+    font-size: 1.7rem;
+    color: var(--light-color);
+    line-height: 3rem;
+}
+
+.dishes .content a:hover {
+    color: var(--yellow-color);
+}
+
+.dishes .content h3{
+    font-size: 2.1rem;
+    font-weight: 400;
+}
+
+.dishes .content .flex {
+    justify-content:space-between;
+    margin-top:2rem;
+}
+
+.dishes .content .price {
+    font-size: 2.5rem;
+    color: var(--black-color);
+    letter-spacing: -.2rem;
+}
+
+.dishes .content .price span {
+    color: var(--light-color);
+    font-size: 2rem;
+}
+
+.dishes .content .flex input{
+    font-size: 2rem;
+    color: var(--black-color);
+    border: var(--border-style);
+    padding: 1rem;
+    width:8rem;
+}
+
+.dishes-more {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+

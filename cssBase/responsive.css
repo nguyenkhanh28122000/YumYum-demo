@@ -1,0 +1,47 @@
+@media (max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width:768px) {
+    .header-icon .icon-menu {
+        display: inline-block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 99%; left: 0; right: 0;
+        border-top: var(--border-style);
+        border-bottom: var(--border-style);
+        background-color: var(--white-color);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    
+    .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .navbar a {
+        display: block;
+        margin: 2rem 2rem;
+    }
+}
+
+@media (max-width: 468px) {
+    html {
+        font-size: 50%;
+    }
+
+    header .logo {
+        font-size: 2rem;
+    }
+
+    .header-icon--item {
+        font-size: 2rem;
+    }
+
+    .box-container-33 {
+        grid-template-columns: 1fr;
+    }
+}
